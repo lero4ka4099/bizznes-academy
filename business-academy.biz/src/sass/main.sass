@@ -1,0 +1,19 @@
+@import mixin
+.container
+  width: $width-container
+  background: #1d0239
+  .content
+    @extend %content
+    .main
+      padding: 1.1rem 0
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      flex-wrap: wrap
+      .logo
+        padding: 0 2.5rem
+      .slogon
+        font-size: 1.3rem
+        font-family: $font-stack
+        color: $font-color
+

@@ -1,0 +1,17 @@
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+html {
+  font-size: 16px;
+  font-family: DINPro-Medium;
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=main.min.css.map */

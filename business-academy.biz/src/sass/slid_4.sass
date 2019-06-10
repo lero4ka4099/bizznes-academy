@@ -1,0 +1,51 @@
+@import mixin
+.container_5
+  width: 100%
+  .slid_5
+    padding: 2rem 0
+    .title
+      text-align: center
+      text-transform: uppercase
+      color: $font-color2
+      font-size: 1.2rem
+    .info
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+      .image
+        width: 40%
+        @media screen and (max-width: 800px)
+          width: 100%
+      .info-content
+        width: 55%
+        @media screen and (max-width: 800px)
+          width: 90%
+          margin: 0 auto
+      .text
+        line-height: 2
+        position: relative
+        &:before
+          content: ""
+          width: 10px
+          height: 10px
+          border-radius: 5px
+          background: $font-color2
+          position: absolute
+          top: 0.7rem
+          left: -25px
+    .info-title
+      text-align: center
+      padding: 1.2rem 0
+      h4
+        font-size: 1rem
+        color: black
+        font-family: $font-stack2
+      button
+        @extend %button-size
+        margin-top: 1.2rem
+
+
+
+
+

@@ -1,0 +1,58 @@
+@import mixin
+.container_4
+  width: 100%
+  background: url("../image/background_2.png") no-repeat
+  background-size: cover
+  .slid_4
+    padding: 40px 0
+    .title
+      text-align: center
+      h4
+        color: $font-color
+        font-size: 1.2rem
+        text-transform: uppercase
+    .video
+      width: 100%
+      text-align: center
+      padding: 2.5rem 0
+      video
+        width: 600px
+        @media screen and (max-width: 800px)
+          width: 100%
+    .slider
+      max-width: 100%
+      background-color: $myBackground
+      padding: 40px
+      .title
+        text-align: center
+        color: white
+        h4
+          color: white
+          font-family: $font-stack3
+          font-size: 1.3rem
+          text-transform: uppercase
+          line-height: 0
+          @media screen and (max-width: 800px)
+            line-height: 1.5
+      .links
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        width: 100%
+        padding: 2rem 0
+        .text
+          text-align: center
+          width: 33%
+          @media screen and (max-width: 800px)
+            width: 100%
+          h5
+            color: $font-color2
+            font-size: 2rem
+            line-height: 0
+          p
+            color: $font-color
+      .button-link
+        text-align: center
+        button
+          @extend %button-size

@@ -1,0 +1,31 @@
+@import mixin
+.container_2
+  width: 100%
+  background: url('../image/backraund.png') no-repeat
+  background-size: cover
+  .content
+    @extend %content
+    .slid_1
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 100vh
+      flex-wrap: wrap
+      .title
+        text-align: center
+        h2
+          font-size: 3rem
+          color: $font-color
+          font-family: $font-stack
+          line-height: 0.2
+          @media screen and (max-width: 800px)
+            line-height: 1
+        p
+          color: $font-color
+          font-family: $font-stack
+        h3
+          color: $font-color2
+          font-size: 2.25rem
+          font-family: $font-stack3
+        button
+          @extend %button-size
